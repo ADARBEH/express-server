@@ -5,6 +5,7 @@ const supertest = require("supertest");
 const server = require('../server')
 
 const request = supertest(server.app)
+const cors = require('cors');
 
 describe('API server', () => {
     it('Home page works', async () => {
